@@ -1,0 +1,247 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+  p
+    font-size: 17px
+  @media (max-width: 775px)
+    display: block
+.home-sections
+  height: 100%
+  min-height: 100vh
+  flex: 1
+  flex-direction: column
+  position: relative
+  section
+    padding: 50px 0
+  .flex
+    display: flex
+    // flex-direction: rows
+  .flex--center
+    justify-content: center
+  .flex--space-around
+    justify-content: space-around
+  .flex--wrap
+    flex-wrap: wrap
+  .order-first
+    order: -1
+// columns
+.col-1
+  width: 320px
+  // margin: 0 10px
+  padding: 0 10px
+  box-sizing: border-box
+  @media(max-width: 640px)
+    width: auto
+  // background: pink
+.col-2
+  max-width: 640px
+  padding: 0 10px
+  box-sizing: border-box
+  width: 100%
+  // background: honeydew
+.col-50
+  width: 50%
+  // background: yellow
+.push-right
+  margin-left: 330px
+ul, li
+  list-style: none
+.home-wrap
+  header
+    width: 135px
+    background: white
+    padding: 30px 0
+    .sideNavPosition
+      width: auto
+      position: fixed
+      top: 30px
+      left: 0
+      bottom: 30px
+      width: 135px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .brand-logo h3
+        font-size: 36px
+    .logo
+      color: transparent
+      text-shadow: none
+      max-width: 125px
+      background:
+        image: url(/images/seunghun-lee-logo.svg)
+        repeat: no-repeat
+        position: center
+        size: contain
+        //color: pink
+      height: 70px
+      padding: 0
+      margin: 0
+    .sideNavList
+      ul
+        list-style: none
+        margin-left: 20px 0
+        padding: 0 20px 0 0
+        text-align: right
+        &.open
+          display: flex
+          flex-direction: column
+          flex-wrap: wrap
+          flex: 1 auto
+      li
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
+    .email-link
+      display: block
+      text-align: right
+      padding-right: 20px
+    .mobile-nav-toggle
+      display: none
+      width: 50px
+      height: 50px
+      // background: pink
+      margin-right: 20px
+      align-items: center
+      cursor: pointer
+      span, span:before, span:after
+        content: ""
+        display: block
+        height: 2px
+        width: 100%
+        background: #333
+        position: relative
+        transition: all 0.3s ease-in-out
+      span:before
+        top: 15px
+      span:after
+        top: -17px
+      &.is-open span
+        background: transparent
+      &.is-open span:before, &.is-open span:after
+        transform-origin: center
+        transform: rotate(45deg)
+        top: 0
+      &.is-open span:before
+        transform: rotate(-45deg)
+// Mobile Nav
+.mobile-nav
+  display: none
+  position: absolute
+  width: 100%
+  background: white
+  padding: 30px 0 20px
+  transform: translateY(-100%)
+  transition: all 0.3s ease-in-out
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+  li
+    text-align: center
+    margin-bottom: 18px
+
+@media (max-width: 775px)
+  .home-wrap
+    .header
+      width: auto
+      padding: 20px 0
+      .header-position
+        width: auto
+        position: relative
+        top: auto
+        bottom: auto
+        left: auto
+        flex-direction: row
+        align-items: center
+      .site-nav ul, .email-link
+        display: none
+      .logo
+        height: 70px
+      .mobile-nav-toggle
+        display: flex
+    .mobile-nav.is-open
+      display: block
+      transform: translateY(0%)
+
+
+// .navbar
+//   background-color: #333
+//   color: #fff
+//   padding: 10px 30px
+//   text-align: left
+//   font-weight: 200
+//   font-size: 20px
+//   line-height: 30px
+//   width: 135px
+//   background: white
+//   position: fixed
+//   top: 0
+//   left: 0
+//   display: flex
+//   align-items: center
+//   &:before
+//     content: ""
+//     height: 30px
+//     width: 30px
+//     display: inline-block
+//     background-image: url('./apollo-logo.svg')
+//     background-size: contain
+//     margin-right: 10px
+
+.home-footer
+  position: absolute
+  width: 100%
+  bottom: 0
+  clear: both
+  a
+    color: white
+    background: #e24040
+    display: block
+    width: 100%
+    line-height: 6
+    text-align: center
+    font-size: 60px
+    font-weight: 300
+    transition: background 150ms ease-in-out
+    &:hover
+      background: darken(#e24040, 8%)
+@media (max-width: 660px)
+  .home-footer
+    a
+      font-size: 25px
+
+.caseStudy
+  margin: 0 auto
+  max-width: 90%
+  margin-bottom: 20px
+
+// .caseStudiesList
+//   display: flex
+//   flex-wrap: wrap
+//   flex-grow: 1
+
+// .caseStudy
+//   display: flex
+//   width: 300px
+.section-login, .section-register, .section-chat, section.caseStudiesList
+  text-align: center
+  flex: 1 0 auto
+  margin-bottom: 360px
+
+section.caseStudiesList
+  color: white
+  .col-1
+    position: relative
+    width: 300px
+    display: flex
+    align-items: stretch
+    flex-direction: column
+    justify-content: center
+    box-sizing: border-box
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2)
+    @media (max-width: 640px)
+      height: auto
+      display: block
+      padding: 50px 20px
+      &:last-child
+        padding: 0px 20px 50px

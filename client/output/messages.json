@@ -1,0 +1,50 @@
+[
+  {
+    "id": "app.login.email",
+    "description": "Email",
+    "defaultMessage": "Enter your Email",
+    "filepath": "src/components/Login.js"
+  },
+  {
+    "id": "app.login.password",
+    "description": "Email",
+    "defaultMessage": "Enter your Password",
+    "filepath": "src/components/Login.js"
+  },
+  {
+    "id": "app.button.login",
+    "description": "Login",
+    "defaultMessage": "Login",
+    "filepath": "src/components/Login.js"
+  },
+  {
+    "id": "app.button.loginwithgoogle",
+    "description": "Login with google",
+    "defaultMessage": "LOGIN WITH GOOGLE",
+    "filepath": "src/components/Login.js"
+  },
+  {
+    "id": "app.button.Logout",
+    "description": "Logout",
+    "defaultMessage": "Logout",
+    "filepath": "src/components/SideNav.js"
+  },
+  {
+    "id": "app.button.Chat",
+    "description": "Chat",
+    "defaultMessage": "Chat",
+    "filepath": "src/components/SideNav.js"
+  },
+  {
+    "id": "app.button.login",
+    "description": "Login",
+    "defaultMessage": "Login",
+    "filepath": "src/components/SideNav.js"
+  },
+  {
+    "id": "app.button.register",
+    "description": "Register",
+    "defaultMessage": "Register",
+    "filepath": "src/components/SideNav.js"
+  }
+]

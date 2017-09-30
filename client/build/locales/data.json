@@ -1,0 +1,20 @@
+{
+  "en": {
+    "app.login.email": "Enter your Email",
+    "app.login.password": "Enter your Password",
+    "app.button.login": "Login",
+    "app.button.loginwithgoogle": "LOG IN WITH GOOGLE",
+    "app.button.Logout": "Logout",
+    "app.button.Chat": "Chat",
+    "app.button.register": "Register"
+  },
+  "de": {
+    "app.login.email": "Geben sie ihre E-Mail Adresse ein",
+    "app.login.password": "Geben Sie Ihr Passwort ein",
+    "app.button.login": "Einloggen",
+    "app.button.loginwithgoogle": "Melden Sie sich mit Google an",
+    "app.button.Logout": "Ausloggen",
+    "app.button.Chat": "Chatten",
+    "app.button.register": "registrieren"
+  }
+}

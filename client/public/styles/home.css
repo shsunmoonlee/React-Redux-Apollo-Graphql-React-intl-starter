@@ -1,0 +1,212 @@
+.home-wrap {
+  display: flex;
+  min-height: 100vh; }
+  .home-wrap p {
+    font-size: 17px; }
+  @media (max-width: 775px) {
+    .home-wrap {
+      display: block; } }
+
+.home-sections {
+  height: 100%;
+  min-height: 100vh;
+  flex: 1;
+  flex-direction: column;
+  position: relative; }
+  .home-sections section {
+    padding: 50px 0; }
+  .home-sections .flex {
+    display: flex; }
+  .home-sections .flex--center {
+    justify-content: center; }
+  .home-sections .flex--space-around {
+    justify-content: space-around; }
+  .home-sections .flex--wrap {
+    flex-wrap: wrap; }
+  .home-sections .order-first {
+    order: -1; }
+
+.col-1 {
+  width: 320px;
+  padding: 0 10px;
+  box-sizing: border-box; }
+  @media (max-width: 640px) {
+    .col-1 {
+      width: auto; } }
+
+.col-2 {
+  max-width: 640px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%; }
+
+.col-50 {
+  width: 50%; }
+
+.push-right {
+  margin-left: 330px; }
+
+ul, li {
+  list-style: none; }
+
+.home-wrap header {
+  width: 135px;
+  background: white;
+  padding: 30px 0; }
+  .home-wrap header .sideNavPosition {
+    width: auto;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    bottom: 30px;
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .home-wrap header .sideNavPosition .brand-logo h3 {
+      font-size: 36px; }
+  .home-wrap header .logo {
+    color: transparent;
+    text-shadow: none;
+    max-width: 125px;
+    background-image: url(/images/seunghun-lee-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 70px;
+    padding: 0;
+    margin: 0; }
+  .home-wrap header .sideNavList ul {
+    list-style: none;
+    margin-left: 20px 0;
+    padding: 0 20px 0 0;
+    text-align: right; }
+    .home-wrap header .sideNavList ul.open {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 1 auto; }
+  .home-wrap header .sideNavList li {
+    margin-bottom: 10px; }
+    .home-wrap header .sideNavList li:last-child {
+      margin-bottom: 0; }
+  .home-wrap header .email-link {
+    display: block;
+    text-align: right;
+    padding-right: 20px; }
+  .home-wrap header .mobile-nav-toggle {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    align-items: center;
+    cursor: pointer; }
+    .home-wrap header .mobile-nav-toggle span, .home-wrap header .mobile-nav-toggle span:before, .home-wrap header .mobile-nav-toggle span:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #333;
+      position: relative;
+      transition: all 0.3s ease-in-out; }
+    .home-wrap header .mobile-nav-toggle span:before {
+      top: 15px; }
+    .home-wrap header .mobile-nav-toggle span:after {
+      top: -17px; }
+    .home-wrap header .mobile-nav-toggle.is-open span {
+      background: transparent; }
+    .home-wrap header .mobile-nav-toggle.is-open span:before, .home-wrap header .mobile-nav-toggle.is-open span:after {
+      transform-origin: center;
+      transform: rotate(45deg);
+      top: 0; }
+    .home-wrap header .mobile-nav-toggle.is-open span:before {
+      transform: rotate(-45deg); }
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  padding: 30px 0 20px;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out; }
+  .mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .mobile-nav li {
+    text-align: center;
+    margin-bottom: 18px; }
+
+@media (max-width: 775px) {
+  .home-wrap .header {
+    width: auto;
+    padding: 20px 0; }
+    .home-wrap .header .header-position {
+      width: auto;
+      position: relative;
+      top: auto;
+      bottom: auto;
+      left: auto;
+      flex-direction: row;
+      align-items: center; }
+    .home-wrap .header .site-nav ul, .home-wrap .header .email-link {
+      display: none; }
+    .home-wrap .header .logo {
+      height: 70px; }
+    .home-wrap .header .mobile-nav-toggle {
+      display: flex; }
+  .home-wrap .mobile-nav.is-open {
+    display: block;
+    transform: translateY(0%); } }
+
+.home-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  clear: both; }
+  .home-footer a {
+    color: white;
+    background: #e24040;
+    display: block;
+    width: 100%;
+    line-height: 6;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    transition: background 150ms ease-in-out; }
+    .home-footer a:hover {
+      background: #d82121; }
+
+@media (max-width: 660px) {
+  .home-footer a {
+    font-size: 25px; } }
+
+.caseStudy {
+  margin: 0 auto;
+  max-width: 90%;
+  margin-bottom: 20px; }
+
+.section-login, .section-register, .section-chat, section.caseStudiesList {
+  text-align: center;
+  flex: 1 0 auto;
+  margin-bottom: 360px; }
+
+section.caseStudiesList {
+  color: white; }
+  section.caseStudiesList .col-1 {
+    position: relative;
+    width: 300px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 640px) {
+      section.caseStudiesList .col-1 {
+        height: auto;
+        display: block;
+        padding: 50px 20px; }
+        section.caseStudiesList .col-1:last-child {
+          padding: 0px 20px 50px; } }

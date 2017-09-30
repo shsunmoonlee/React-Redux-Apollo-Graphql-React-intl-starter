@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2017-08-08T08:13:29.167Z\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"X-Generator: react-intl-po\n"
+
+
+#: output/messages.json
+#. [app.button.Chat] - Chat
+#. defaultMessage is:
+#. Chat
+msgid "Chat"
+msgstr "Chatten"
+
+#: output/messages.json
+#. [app.login.email] - Email
+#. defaultMessage is:
+#. Enter your Email
+msgid "Enter your Email"
+msgstr "Geben sie ihre E-Mail Adresse ein"
+
+#: output/messages.json
+#. [app.login.password] - Email
+#. defaultMessage is:
+#. Enter your Password
+msgid "Enter your Password"
+msgstr "Geben Sie Ihr Passwort ein"
+
+#: output/messages.json
+#. [app.button.loginwithgoogle] - Login with google
+#. defaultMessage is:
+#. LOGIN WITH GOOGLE
+msgid "LOGIN WITH GOOGLE"
+msgstr "Melden Sie sich mit Google an"
+
+#: output/messages.json
+#. [app.button.login] - Login
+#. defaultMessage is:
+#. Login
+#: output/messages.json
+#. [app.button.login] - Login
+#. defaultMessage is:
+#. Login
+msgid "Login"
+msgstr "Einloggen"
+
+#: output/messages.json
+#. [app.button.Logout] - Logout
+#. defaultMessage is:
+#. Logout
+msgid "Logout"
+msgstr "Ausloggen"
+
+#: output/messages.json
+#. [app.button.register] - Register
+#. defaultMessage is:
+#. Register
+msgid "Register"
+msgstr "Neu registrieren"
